@@ -1,0 +1,47 @@
+@import url("../library/library.css");
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #1F2833;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 75px repeat(5, 1fr);
+  grid-template-areas:  ". . ."
+                        "intro intro intro"
+                        "intro intro intro"
+                        "break1 break1 break1"
+                        "after-intro after-intro after-intro"
+                        "desc desc desc"
+                        ". . .";
+        
+}
+
+.text-container {
+  grid-area: intro;
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 100px;
+}
+
+#break1 {
+  grid-area: break1;
+}
+
+#after-intro{
+  grid-area: after-intro;
+}
+
+#name {
+  font-size: 25px; 
+}
+
+#hello {
+  font-size: 150px; 
+}
+#desc {
+  font-size: 20px; 
+}
+

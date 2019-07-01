@@ -1,0 +1,43 @@
+/* Theme colors */
+/* Current Theme: https://visme.co/blog/wp-content/uploads/2016/09/website12-1024x512.jpg */
+
+.theme1 {
+  color: #0B0C10;
+}
+
+.theme2 {
+  color: #1F2833;
+}
+
+.theme3 {
+  color: #C5C6C7;
+}
+
+.theme4 {
+  color: #66FCF1;
+}
+
+.theme5 {
+  color: #45A29E;
+}
+
+.theme1-back {
+  background-color: #0B0C10;
+}
+
+.theme2-back {
+  background-color: #1F2833;
+}
+
+.theme3-back {
+  background-color: white;
+}
+
+.theme4-back {
+  background-color: #66FCF1;
+}
+
+.theme5-back {
+  background-color: #45A29E;
+}
+  

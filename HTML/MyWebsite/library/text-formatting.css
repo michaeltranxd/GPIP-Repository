@@ -1,0 +1,73 @@
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align:right;
+}
+
+.opacity-90 {
+  opacity: .90;
+}
+
+.opacity-75 {
+  opacity: .75;
+}
+
+.line-break {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.width-60{
+  width: 60%;
+}
+
+.width-40{
+  width: 40%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
+.parallax {
+  /* Full Height */
+  height: 100%;
+
+  /* Create Parallax Scrolling Effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Help from W3Schools */
+.display-middle{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.margin-lr-10 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.size20{
+  font-size: 20px;
+}
+
+.size40{
+  font-size: 40px;
+}

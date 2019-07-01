@@ -1,0 +1,614 @@
+<!DOCTYPE>
+
+<html>
+  <head>
+    <link href="./styles.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <!-- Title at the top -->
+    <div class="title">
+    	<h1>html reference sheet</h1>
+    </div>
+    
+    <!-- Table of contents -->
+    <div class="table-of-contents" id="table-of-contents">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#basic-html">Basic HTML</a></li>
+        <li><a href="#formatting">Formatting</a></li>
+        <li><a href="#forms-and-input">Forms and Input</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#audio-video">Audio/Video</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#styles-and-semantics">Styles and Semantics</a></li>
+      </ul>
+    </div>
+    
+    <!-- Table contains Basic HTML tags -->
+    <div id="basic-html">
+      <h3 class="subcategory">Basic HTML</h3>
+      <table>
+        <thead>
+          <th>Tags</th>
+          <th>Description</th>
+          <th>Code</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_doctype.asp" target="_blank">&lt!DOCTYPE&gt</a></td>
+            <td>Defines the document type</td>
+            <td>&lt!DOCTYPE html&gt</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_html.asp" target="_blank">&lthtml&gt</a></td>
+            <td>Defines the root of an HTML document</td>
+            <td>&lthtml&gt...&lt/html&gt</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_head.asp" target="_blank">&lthead&gt</a></td>
+            <td>Defines information about the document</td>
+            <td>&lthead&gt...&lt/head&gt</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_title.asp" target="_blank">&lttitle&gt</a></td>
+            <td>Defines a title for the document (name of tab)</td>
+            <td>&lttitle&gt...&lt/title&gt</td>
+            <td>N/A</td>
+          </tr>          
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_body.asp" target="_blank">&ltbody&gt</a></td>
+            <td>Defines the document's body</td>
+            <td>&ltbody&gt...&lt/body&gt</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_hn.asp" target="_blank">&lth1&gt to &lth6&gt</a></td>
+            <td>Defines HTML headings</td>
+            <td>&lth1&gtTest&lt/h1&gt</td>
+            <td><h1>Test</h1></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_title.asp" target="_blank">&ltp&gt</a></td>
+            <td>Defines a paragraph</td>
+            <td>&ltp&gtTest&lt/p&gt</td>
+            <td><p>Test</p></td>
+          </tr>          
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_br.asp" target="_blank">&ltbr&gt</a></td>
+            <td>Defines a single line break</td>
+            <td>A Dog &ltbr&gt Test</td>
+            <td>A Dog <br> Test</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_hr.asp" target="_blank">&lthr&gt</a></td>
+            <td>Defines a thematic change in the content</td>
+            <td>A Dog &lthr&gt Test</td>
+            <td>A Dog <hr> Test</td>
+          </tr>           
+          <tr>
+            <td class="lastrow"><a href="https://www.w3schools.com/tags/tag_comment.asp" target="_blank">&lt!--...--&gt</a></td>
+            <td class="lastrow">Defines a comment</td>
+            <td class="lastrow">&lt!-- a comment --&gt</td>
+            <td class="lastrow">N/A</td>
+          </tr>          
+        </tbody>
+      </table>
+    </div>
+    
+  	<!-- Table contains formatting HTML tags -->
+    <div id="formatting">
+      <h3 class="subcategory">Formatting</h3>
+      <table>
+        <thead>
+          <th>Tags</th>
+          <th>Description</th>
+          <th>Code</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_abbr.asp" target="_blank">&ltabbr&gt</a></td>
+            <td>Defines an abbreviation or an acronym</td>
+            <td>&ltabbr title="A Dog"&gtAD&lt/abbr&gt</td>
+            <td><abbr title="A Dog">AD</abbr></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_address.asp" target="_blank">&ltaddress&gt</a></td>
+            <td>Defines the root of an HTML document</td>
+            <td>&ltaddress&gt My Address</td>
+            <td><address>My Address</address></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_b.asp" target="_blank">&ltb&gt</a></td>
+            <td>Defines bold text</td>
+            <td>&ltb&gtbold&lt/b&gt</td>
+            <td><b>bold</b></td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_blockquote.asp" target="_blank">&ltblockquote&gt</a></td>
+            <td>Defines a section that is quoted from another source</td>
+            <td>&ltblockquote&gtA Quote&lt/blockquote&gt</td>
+            <td><blockquote>A Quote</blockquote></td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_cite.asp" target="_blank">&ltcite&gt</a></td>
+            <td>Defines the title of a work</td>
+            <td>&ltcite&gtA Title&lt/cite&gt</td>
+            <td><cite>A Title</cite></td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_code.asp" target="_blank">&ltcode&gt</a></td>
+            <td>Defines a piece of computer code</td>
+            <td>&ltcode&gtSystem.out.println();&lt/code&gt</td>
+            <td><code>System.out.println();</code></td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_del.asp" target="_blank">&ltdel&gt</a></td>
+            <td>Defines text that has been deleted from a document</td>
+            <td>&ltdel&gtDeleted Text&lt/del&gt</td>
+            <td><del>Deleted Text</del></td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_em.asp" target="_blank">&ltem&gt</a></td>
+            <td>Defines emphasized text </td>
+            <td>&ltem&gtEmphasized Text&lt/em&gt</td>
+            <td><em>Emphasized Text</em></td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_strong.asp" target="_blank">&ltstrong&gt</a></td>
+            <td>Defines important text</td>
+            <td>&ltstrong&gtImportant Text&lt/strong&gt</td>
+            <td><strong>Important Text</strong></td>
+          </tr>    
+          <tr>
+            <td class="lastrow"><a href="https://www.w3schools.com/tags/tag_sub.asp" target="_blank">&ltsub&gt</a></td>
+            <td class="lastrow">Defines subscripted text</td>
+            <td class="lastrow">CO&ltsub&gt2&lt/sub&gt</td>
+            <td>CO<sub>2</sub></td>
+          </tr>              
+        </tbody>
+      </table>
+    </div>
+    
+		<!-- Table contains formatting HTML tags -->
+    <div id="forms-and-input">
+      <h3 class="subcategory">Forms and Input</h3>
+      <table>
+        <thead>
+          <th>Tags</th>
+          <th>Description</th>
+          <th>Code</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_form.asp" target="_blank">&ltform&gt</a></td>
+            <td>Defines an HTML form for user input</td>
+            <td>&ltform action="/action_page.php" method="get"&gt&lt/form&gt</form></td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank">&ltinput&gt</a></td>
+            <td>Defines an input control</td>
+            <td>Password&ltinput type="text" value="Autofilled"&gt</td>
+            <td>Password<input type="text" name="pwd" value="Autofilled"></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_textarea.asp" target="_blank">&lttextarea&gt</a></td>
+            <td>Defines a multiline input control (text area)</td>
+            <td>&lttextarea&gtAutofilled&lt/textarea&gt</td>
+            <td><textarea>Autofilled</textarea></td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_button.asp" target="_blank">&ltbutton&gt</a></td>
+            <td>Defines a clickable button</td>
+            <td>&ltbutton&gtA Button&ltbutton&gt</td>
+            <td><button>A Button</button></td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_select.asp" target="_blank">&ltselect&gt</a></td>
+            <td>Defines a drop-down list</td>
+            <td>&ltselect&gt<br>&ltoption&gtoption1&lt/option&gt<br>&ltoption&gtoption2&lt/option&gt<br> &lt/select&gt</td>
+            <td><select>
+              <option>option1</option>
+              <option>option2</option>
+            </select></td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_option.asp" target="_blank">&ltoption&gt</a></td>
+            <td>Defines an option in a drop-down list</td>
+            <td>&ltoption&gtoption1&lt/option&gt<br></td>
+            <td>N/A</td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_label.asp" target="_blank">&ltlabel&gt</a></td>
+            <td>Defines a label for an &ltinput&gt element</td>
+            <td>&ltlabel for="input1"&gtlabel&lt/label&gt &ltbutton name="input1" id="input1"&gtbutton&lt/button&gt</td>
+            <td><label for="input1">label</label> <button name="input1" id="input1">button</button></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_datalist.asp" target="_blank">&ltdatalist&gt</a></td>
+            <td>Specifies a list of pre-defined options for input controls</td>
+            <td>&ltinput list="alist"&gt<br>&ltdatalist id="alist"&gt<br>&ltoption&gtoption1&lt/option&gt<br>&ltoption&gtoption2&lt/option&gt
+            </datalist></td>
+            <td><input list="alist">
+              <datalist id="alist">
+              <option>option1</option>
+              <option>option2</option>
+            </datalist></td>
+          </tr>    
+          <tr>
+            <td class="lastrow"><a href="https://www.w3schools.com/tags/tag_output.asp" target="_blank">&ltoutput&gt</a></td>
+            <td class="lastrow">Defines the result of a calculation</td>
+            <td class="lastrow">&ltform oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt0<br>
+              &ltinput type="range" id="a" value="50"&gt100<br>
+              +&ltinput type="number" id="b" value="50"&gt<br>
+              =&ltoutput name="x" for="a b"&gt&lt/output&gt
+              &lt/form&gt</td>
+            <td class="lastrow"><form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+              <input type="range" id="a" value="50">100
+              +<input type="number" id="b" value="50">
+              =<output name="x" for="a b">100</output>
+              </form></td>
+          </tr>                
+        </tbody>
+      </table>
+    </div>
+  
+  	<!-- Table contains Images HTML tags -->  
+    <div id="images">
+      <h3 class="subcategory">Images</h3>
+      <table>
+        <thead>
+        	<th>Tags</th>
+          <th>Description</th>
+          <th>Code</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="lastrow"><a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank">&ltimg&gt</a></td>
+            <td class="lastrow">Defines an image</td>
+            <td class="lastrow">&ltimg src="cat.png" height="100" width="150"&gt</td>
+            <td class="lastrow"><img src="Media/cat.png" height="100" width="150"></td>
+          </tr>   
+        </tbody>
+      </table>
+    </div>
+    
+    <!-- Table contains Audio/Video HTML tags -->
+    <div id="audio-video">
+      <h3 class="subcategory">Audio/Video</h3>
+      <table>
+        <thead>
+        	<th>Tags</th>
+          <th>Description</th>
+          <th>Code</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_audio.asp" target="_blank">&ltaudio&gt</a></td>
+            <td>Defines sound content</td>
+            <td>&ltaudio controls src="bell.mp3" <br>type="audio/mp3"&gt&lt/audio&gt</td>
+            <td><audio controls src="Media/bell.mp3" type="audio/mp3"></audio></td>
+          </tr>
+          <tr>
+            <td class="lastrow"><a href="https://www.w3schools.com/tags/tag_video.asp" target="_blank">&ltvideo&gt</a></td>
+            <td class="lastrow">Defines a video or movie</td>
+            <td class="lastrow">&ltvideo controls width="300" height="100" <br>src="catplaying.mp4" type="video/mp4"&gt&lt/video&gt</td>
+            <td class="lastrow"><video controls width="300" height="100" src="Media/catplaying.mp4" type="video/mp4"></video></td>
+          </tr>          
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Table contains Links HTML tags -->
+    <div id="links">
+      <h3 class="subcategory">Links</h3>
+      <table>
+        <thead>
+        	<th>Tags</th>
+          <th>Description</th>
+          <th>Code</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">&lta&gt</a></td>
+            <td>Defines a hyperlink</td>
+            <td>&lta href="https://www.google.com/" target="_blank"&gt<br>https://www.google.com/&lt/a&gt</td>
+            <td><a href="https://www.google.com/" target="_blank">https://www.google.com/</a></td>
+          </tr>
+          <tr>
+            <td class="lastrow"><a href="https://www.w3schools.com/tags/tag_link.asp" target="_blank">&ltlink&gt</a></td>
+            <td class="lastrow">Defines the relationship between a document and an external resource (most used to link to style sheets)</td>
+            <td class="lastrow">&ltlink href="./styles.css" type="text/css" <br>rel="stylesheet"&gt</td>
+            <td class="lastrow">N/A</td>
+          </tr>          
+        </tbody>
+      </table>
+    </div>    
+    
+		<!-- Table contains Lists HTML tags -->
+    <div id="lists">
+      <h3 class="subcategory">Lists</h3>
+      <table>
+        <thead>
+          <th>Tags</th>
+          <th>Description</th>
+          <th>Code</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_ul.asp" target="_blank">&ltul&gt</a></td>
+            <td>Defines an unordered list</td>
+            <td>&ltul&gt<br>&ltli&gtcereal&lt/li&gt<br>&ltli&gtmilk&lt/li&gt<br>&lt/ul&gt</td>
+            <td><ul>
+              <li>cereal</li>
+              <li>milk</li>
+            </ul></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_ol.asp" target="_blank">&ltol&gt</a></td>
+            <td>Defines an ordered list</td>
+            <td>&ltol&gt<br>&ltli&gtcereal&lt/li&gt<br>&ltli&gtmilk&lt/li&gt<br>&lt/ol&gt</td>
+            <td><ol>
+                <li>cereal</li>
+                <li>milk</li>
+              </ol></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_li.asp" target="_blank">&ltli&gt</a></td>
+            <td>Defines a list item</td>
+            <td>&ltli&gtcereal&lt/li&gt</td>
+            <td>N/A</td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_dl.asp" target="_blank">&ltdl&gt</a></td>
+            <td>Defines a description list</td>
+            <td>&ltdl&gt<br>&ltdt&gtCoffee&lt/dt&gt<br>&ltdd&gtBlack hot drink&lt/dd&gt<br>&ltdt&gtMilk&lt/dt&gt<br>&ltdd&gtWhite cold drink&lt/dd&gt<br>&lt/dl&gt</td>
+            <td><dl>
+              <dt>Coffee</dt>
+              <dd>Black hot drink</dd>
+              <dt>Milk</dt>
+              <dd>White cold drink</dd>
+            </dl></td>
+          </tr>    
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_dt.asp" target="_blank">&ltdt&gt</a></td>
+            <td>Defines a term/name in a description list</td>
+            <td>&ltdl&gt<br>&ltdt&gtCoffee&lt/dt&gt<br>&lt/dl&gt</td>
+            <td><dl>
+                <dt>Coffee</dt>
+            </dl></td>
+          </tr>    
+          <tr>
+            <td class="lastrow"><a href="https://www.w3schools.com/tags/tag_dd.asp" target="_blank">&ltdd&gt</a></td>
+            <td class="lastrow">Defines a description of a term/name in a description list</td>
+            <td class="lastrow">&ltdl&gt<br>&ltdd&gtBlack hot drink&lt/dd&gt<br>&lt/dl&gt</td>
+            <td class="lastrow"><dl>
+                <dd>Black hot drink</dd>
+            </dl></td>
+          </tr>          
+        </tbody>
+      </table>
+    </div>    
+ 
+    <!-- Table contains Tables HTML tags -->
+    <div id="tables">
+      <h3 class="subcategory">Tables</h3>
+      <table>
+        <thead>
+        	<th>Tags</th>
+          <th>Description</th>
+          <th>Code</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_table.asp" target="_blank">&lttable&gt</a></td>
+            <td>Defines a table</td>
+            <td>&lttable&gt<br>
+              &lttr&gt<br>
+              &lttd&gthello&lt/td&gt<br>
+              &lt/tr&gt<br>
+              &lt/table&gt&lt/td&gt</td>
+            <td><table>
+              <tr>
+                <td class="lastrow">hello</td>
+              </tr>
+            </table></td>
+          </tr>   
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_caption.asp" target="_blank">&ltcaption&gt</a></td>
+            <td>Defines a table caption</td>
+            <td>&lttable&gt<br>
+              &ltcaption&gtA Caption&lt/caption&gt<br>
+              &lttr&gt<br>
+              &lttd&gthello&lt/td&gt<br>
+              &lt/tr&gt<br>
+              &lt/table&gt&lt/td&gt</td>
+            <td><table>
+              <caption>A Caption</caption>
+                <tr>
+                  <td class="lastrow">hello</td>
+                </tr>
+              </table></td>
+          </tr>   
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_th.asp" target="_blank">&ltth&gt</a></td>
+            <td>Defines a header cell in a table</td>
+            <td>&lttable&gt<br>
+                &ltth&gthello&lt/th&gt<br>
+                &lttr&gt<br>
+                  &lttd&gtworld&lt/td&gt<br>
+                &lt/tr&gt<br>
+            &lt/table&gt</td>
+            <td><table>
+              <th>hello</th>
+              <tr>
+                <td class="lastrow">world</td>
+              </tr>
+            </table></td>
+          </tr>   
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_tr.asp" target="_blank">&lttr&gt</a></td>
+            <td>Defines a row in a table</td>
+            <td>&lttable&gt<br>
+              &lttr&gt<br>
+                &lttd&gthello&lt/td&gt<br>
+              &lt/tr&gt<br>
+              &lttr&gt<br>
+                &lttd&gtworld&lt/td&gt<br>
+              &lt/tr&gt<br>
+            &lt/table&gt</td>
+            <td><table>
+              <tr>
+                <td class="lastrow">hello</td>
+              </tr>
+              <tr>
+                <td class="lastrow">world</td>
+              </tr>
+            </table></td>
+          </tr>   
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_td.asp" target="_blank">&lttd&gt</a></td>
+            <td>Defines a cell in a table</td>
+            <td>&lttable&gt<br>
+                &lttd&gtworld&lt/td&gt<br>
+              &lt/table&gt</td>
+            <td><table>
+              <td class="lastrow">world</td>
+            </table></td>
+          </tr>   
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_thead.asp" target="_blank">&ltthead&gt</a></td>
+            <td>Groups the header content in a table</td>
+            <td>&ltthead&gt...&lt/thead&gt</td>
+            <td>N/A</td>
+          </tr>   
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_tbody.asp" target="_blank">&lttbody&gt</a></td>
+            <td>Groups the body content in a table</td>
+            <td>&lttbody&gt...&lt/tbody&gt</td>
+            <td>N/A</td>
+          </tr>   
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_tfoot.asp" target="_blank">&lttfoot&gt</a></td>
+            <td>Groups the footer content in a table</td>
+            <td>&lttfoot&gt...&lt/tfoot&gt</td>
+            <td>N/A</td>
+          </tr>
+          <tr>            
+            <td class="lastrow"><a href="https://www.w3schools.com/tags/tag_col.asp" target="_blank">&ltcol&gt</a></td>
+            <td class="lastrow">Specifies column properties for each column within a &ltcolgroup&gt element </td>
+            <td class="lastrow">
+              &lttable&gt<br>
+                  &ltcol span="1" style="background-color:green"&gt<br>
+                  &lttr&gt<br>
+                    &lttd&gthello&lt/td&gt<br>
+                    &lttd&gtworld&lt/td&gt<br>
+                  &lt/tr&gt<br>
+                &lt/table&gt<br>
+            </td>
+            <td class="lastrow">
+              <table>
+                <col span="1" style="background-color:green">
+                <tr>
+                  <td class="lastrow">hello</td>
+                  <td class="lastrow">world</td>
+                </tr>
+              </table>
+            </td>
+          </tr>   
+        </tbody>
+      </table>
+    </div>    
+    
+    <!-- Table contains Styles and Semantics HTML tags -->
+    <div id="styles-and-semantics">
+      <h3 class="subcategory">Styles and Semantics</h3>
+      <table>
+        <thead>
+        	<th>Tags</th>
+          <th>Description</th>
+          <th>Code</th>
+          <th>Example</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_style.asp" target="_blank">&ltstyle&gt</a></td>
+            <td>Defines style information for a document</td>
+            <td>&ltstyle&gt<br>
+                h6 {<br>
+                  color: red<br>
+                }<br>
+            &lt/style&gt</td>
+            <td><style>
+              h6 {
+                color: red
+              }
+              </style>
+              <h6>Hello World</h6>
+            </td>            
+          </tr>   
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_div.asp" target="_blank">&ltdiv&gt</a></td>
+            <td>Defines a section in a document</td>
+            <td>&ltdiv&gt...&lt/div&gt</td>
+            <td>N/A</td>
+          </tr>   
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_sub.asp" target="_blank">&ltspan&gt</a></td>
+            <td>Defines a section in a document</td>
+            <td>&ltspan&gt...&lt/span&gt</td>
+            <td>N/A</td>
+          </tr>   
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_header.asp" target="_blank">&ltheader&gt</a></td>
+            <td>Defines a header for a document or section</td>
+            <td>&ltheader&gt...&lt/header&gt</td>
+            <td>N/A</td>
+          </tr>   
+          <tr>
+            <td><a href="https://www.w3schools.com/tags/tag_details.asp" target="_blank">&ltdetails&gt</a></td>
+            <td>Defines additional details that the user can view or hide</td>
+            <td>&ltdetails&gt...&lt/details&gt</td>
+            <td>N/A</td>
+          </tr>   
+          <tr>
+            <td class="lastrow"><a href="https://www.w3schools.com/tags/tag_summary.asp" target="_blank">&ltsummary&gt</a></td>
+            <td class="lastrow">Defines a visible heading for a &ltdetails&gt element</td>
+            <td class="lastrow">
+              &ltdetails&gt<br>
+                &ltsummary&gtCopyright 1999-2018.&lt/summary&gt<br>
+                &ltp&gt - by Refsnes Data. All Rights Reserved.&lt/p&gt<br>
+                &ltp&gtAll content and graphics on this web site are the property of the company Refsnes Data.&lt/p&gt<br>
+              &lt/details&gt
+            </td>
+            <td class="lastrow"> 
+              <details>
+                <summary>Copyright 1999-2018.</summary>
+                <p> - by Refsnes Data. All Rights Reserved.</p>
+                <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+              </details>
+            </td>
+          </tr>   
+        </tbody>
+      </table>
+    </div>
+   
+    <div class="copyright">
+      <p>All images, links, descriptions, and parts of the code do not belong to me. They go to their respective owners. Everything except images belong to w3schools.</p>
+    </div>
+  </body>
+</html>

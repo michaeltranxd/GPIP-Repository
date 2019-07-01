@@ -1,0 +1,11 @@
+@import url("../library/library.css");
+
+.research-entry {
+  margin: 10px 10%;
+  border: 1px white solid;
+  border-radius: 30px;
+}
+
+.header {
+  font-size: 100px;
+}

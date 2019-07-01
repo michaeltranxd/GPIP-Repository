@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!-- Prevent Firefox from yelling at me -->
+<meta charset="utf-8"/>
+
+<html>
+    <head>
+        <link href="./stylesheets/research-stylesheet.css" type=text/css rel='stylesheet'>
+        <!-- JQuery Content Delivery Network (CDN) hosted by Google -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body class="body theme2-back" id="body">
+        <script>
+            // Short hand for $(document).ready()
+            // Will run when Document Object Model (DOM) is safe to be modified
+            $(function(){
+                $('#navigation-panel').load('./library/collapse-reusable.html');
+            });    
+        </script>
+
+        <!-- Will automatically populate with reusable template -->
+        <div id="navigation-panel"></div>
+        
+        <h1 class="indie-flower theme3 center header no-margin">Research</h1>
+
+        <div class="research-entry">
+          <div class="research-information margin-lr-10 center">
+            <div class="entry-topic">
+              <h1 class="rubik-mono-one theme5 size40">
+                <abbr title="Guarenteed Paid Internship Program">GPIP</abbr> Internship</h1>
+              <h2 class="raleway theme3 size20">Data Visualization of Head/Neck Cancer Patients</h2>
+              <hr class="line-break width-40">
+            </div>
+            <div class="raleway theme3 entry-description">
+              <p>Working under Professor Marai to do data visualization with anonymized data
+                of head and neck cancer patients at UIC. We will be doing the data entry and data cleaning.</p>
+              <br>
+              <br>
+              <br>
+              <p>Research Plan</p>
+              <hr class="line-break width-40">
+              <p>Michael Tran - Summer 2019</p>
+              <ul class="goals">
+                <li>Explore another aspect of computer science (Data Visualization)</li>
+                <li>Learn how to build a website ground up (HTML/CSS/JS)</li>
+              </ul>
+              <p>[Insert research project/area to work on]</p>
+              <p>[Insert work plan]</p>
+              <p>[Insert schedule w/ concrete quantifiable milestones]</p>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

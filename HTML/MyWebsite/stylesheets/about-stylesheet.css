@@ -1,0 +1,45 @@
+@import url("../library/library.css");
+
+/* cat:   https://img.purch.com/h/1400/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MzAvb3JpZ2luYWwvc2h1dHRlcnN0b2NrXzExMTA1NzIxNTkuanBn" */
+/* doggo: https://wallpaperplay.com/walls/full/4/6/2/224854.jpg" */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.image1 {
+  background-image: url("../media/group_pic.jpg");
+}
+
+.image2 {
+  /* Image being used */
+  background-image: url("../media/cs.png");
+}
+
+.image3 {
+  background-image: url("https://wallpaperplay.com/walls/full/4/6/2/224854.jpg");
+}
+
+.background-color{
+  background-color: #1F2833;
+}
+
+.about-myself-label {
+  padding: 0 24px;
+}
+
+.label {
+  vertical-align: middle;
+}
+
+.about-myself-text {
+  padding: 0px 15%;
+  
+}
+
+@media only screen and (max-width: 600px){
+  .parallax {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}

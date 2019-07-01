@@ -1,0 +1,3 @@
+AddHandler server-parsed .html
+Options All -Indexes
+DirectoryIndex /home/mtt2/public_html/MyWebsite/main.html

@@ -1,0 +1,45 @@
+<!-- How To Use
+  1.) Have <body id="body"> in html file
+  2.) Have @include url(".../navigation-menu.css")                
+  3.) Include the following in the <head>:
+
+    JQuery Content Delivery Network (CDN) hosted by Google // this is a comment
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  4.) Include the following in the <body>
+
+    Will automatically populate with reusable template // this is a comment
+    <div id="navigation-panel"></div>
+
+-->
+
+<div class="navigation-panel">
+    <button class="collapsible theme4-back" onclick="openNav()">☰</button>
+    <div class="website-logo">
+        <h2 class="theme4 dancing-script">Michael Tran</h2>
+    </div>
+    <div class="navigation-content theme1-back" id="navigation-content">
+        <button class="collapsible theme4-back theme2" id="closeColl" onclick="closeNav()">x</button>
+        <div class="navigation-group">
+            <h2 class="navigation-a"><a class="theme3 mali" href="./main.html">Home</a></h2>
+            <h2 class="navigation-b"><a class="theme3 mali" href="./research.html">Research</a></h2>
+            <h2 class="navigation-c"><a class="theme3 mali" href="./about.html">About</a></h2>                
+            <h2 class="navigation-d"><a class="theme3 mali" href="./contact.html">Contact</a></h2>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("navigation-content").style.maxHeight = "100%";
+            document.getElementById("body").style.overflow = 'hidden'; // Hiding scroll bar
+            document.getElementById("closeColl").style.visibility = "visible";
+            //console.log("hello world");
+            //console.log(document.getElementById("content"));
+        }
+        function closeNav(){
+            document.getElementById("navigation-content").style.maxHeight = "0%";
+            document.getElementById("body").style.overflow = 'visible'; // Showing scroll bar
+            document.getElementById("closeColl").style.visibility = "hidden";
+        }
+    </script>
+</div>
