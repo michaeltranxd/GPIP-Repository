@@ -5,29 +5,32 @@
 
 <html>
     <head>
-        <link href="./stylesheets/research-stylesheet.css" type=text/css rel='stylesheet'>
-        <!-- JQuery Content Delivery Network (CDN) hosted by Google -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <link href="./stylesheets/research-stylesheet.css" type=text/css rel='stylesheet'>
+      <!-- JQuery Content Delivery Network (CDN) hosted by Google -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
-    <body class="body theme2-back" id="body">
-        <script>
-            // Short hand for $(document).ready()
-            // Will run when Document Object Model (DOM) is safe to be modified
-            $(function(){
-                $('#navigation-panel').load('./library/collapse-reusable.html');
-            });    
-        </script>
 
-        <!-- Will automatically populate with reusable template -->
-        <div id="navigation-panel"></div>
-        
+    <script>
+      // Short hand for $(document).ready()
+      // Will run when Document Object Model (DOM) is safe to be modified
+      $(function(){
+          $('#navigation-panel').load('./library/collapse-reusable.html');
+      });    
+    </script>
+
+    <!-- Will automatically populate with reusable template -->
+    <div id="navigation-panel"></div>
+
+    <body class="body theme2-back" id="body">        
         <h1 class="indie-flower theme3 center header no-margin">Research</h1>
 
         <div class="research-entry">
           <div class="research-information margin-lr-10 center">
             <div class="entry-topic">
               <h1 class="rubik-mono-one theme5 size40">
-                <abbr title="Guarenteed Paid Internship Program">GPIP</abbr> Internship</h1>
+                <a class="theme5 no-outline-links" href="https://ecc.uic.edu/students/freshman-internship-program/" >
+                  <abbr title="Guarenteed Paid Internship Program">GPIP</abbr> Internship</h1>
+                </a>
               <h2 class="raleway theme3 size20">Data Visualization of Head/Neck Cancer Patients</h2>
               <hr class="line-break width-40">
             </div>
@@ -50,5 +53,6 @@
             </div>
           </div>
         </div>
+
     </body>
 </html>

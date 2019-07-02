@@ -35,17 +35,6 @@
   width: 20%;
 }
 
-.parallax {
-  /* Full Height */
-  height: 100%;
-
-  /* Create Parallax Scrolling Effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /* Help from W3Schools */
 .display-middle{
   position:absolute;
@@ -70,4 +59,9 @@
 
 .size40{
   font-size: 40px;
+}
+
+.no-outline-links {
+  text-decoration: none;
+  outline: none;
 }

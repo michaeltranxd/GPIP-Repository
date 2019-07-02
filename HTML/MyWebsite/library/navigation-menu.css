@@ -1,6 +1,6 @@
 .navigation-panel {
   height: 100%;
-  width: 0%;
+  width: 100%;
 }
 
 .collapsible{
@@ -13,11 +13,13 @@
   border: none; /* Remove borders */
   outline: 0;  /* remove box around click */
   opacity: 0.85;
-  z-index: 5; /* Stay on top */
+  z-index: 10; /* Stay on top */
+  transition: 1s;
 }
 
 .collapsible:hover{
   background-color: #45A29E;
+  transition: 0.3s;
 }
 
 .navigation-content {
@@ -28,7 +30,7 @@
   left: 0;
   position: fixed;  
   overflow: hidden;
-  z-index: 10; /* Stay on top */
+  z-index: 5; /* Stay on top */
   transition: 0.5s;
 }
 
@@ -53,29 +55,8 @@
 .navigation-d{
   grid-row-start: 5;
 }
-.navigation-group a{
-  text-decoration: none;
-  outline: none;
+
+.navigation-group a:hover {
+  color: #45A29E;
+  transition: 0.6s;
 }
-
-#closeColl{
-  visibility: hidden;
-}
-
-.website-logo {
-  width: 100%;
-  padding: 0;
-  margin: 5px;
-  text-align: left;
-  white-space: nowrap;
-  z-index: 2;
-}
-
-
-.centered-logo2 {
-  position: absolute;
-  margin: 20%;
-  padding: 0 25%;
-  z-index: 5;
-}
-

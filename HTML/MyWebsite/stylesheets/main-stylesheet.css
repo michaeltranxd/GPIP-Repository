@@ -1,21 +1,16 @@
 @import url("../library/library.css");
 
-body {
-  padding: 0px;
-  margin: 0px;
-  background-color: #1F2833;
-}
-
 .grid {
   display: grid;
   grid-template-rows: 75px repeat(5, 1fr);
-  grid-template-areas:  ". . ."
-                        "intro intro intro"
-                        "intro intro intro"
-                        "break1 break1 break1"
-                        "after-intro after-intro after-intro"
-                        "desc desc desc"
-                        ". . .";
+  grid-template-areas:  
+  ". . ."
+  "intro intro intro"
+  "intro intro intro"
+  "break1 break1 break1"
+  "after-intro after-intro after-intro"
+  "desc desc desc"
+  ". . .";
         
 }
 
@@ -24,6 +19,14 @@ body {
   text-align: center;
   line-height: 20px;
   margin-bottom: 100px;
+}
+
+.website-logo {
+  padding: 0;
+  margin: 0 1% 1%;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 2;
 }
 
 #break1 {
@@ -44,4 +47,5 @@ body {
 #desc {
   font-size: 20px; 
 }
+
 

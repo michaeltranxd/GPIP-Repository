@@ -1,1 +1,9 @@
 @import url("../library/library.css");
+
+.image {
+  background-image: url("../media/contact_background.jpg");
+}
+
+.contact-label {
+  padding: 0 24px;
+}
