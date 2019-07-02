@@ -9,3 +9,8 @@
 .header {
   font-size: 100px;
 }
+
+.gpip-link:hover {
+  color: #45A29E;
+  transition: 0.6s;
+}
