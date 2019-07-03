@@ -1,0 +1,14 @@
+<p>June 17th - June 21</p><ul><li></li></ul>
+<p>June 24th - June 28th</p><ul><li></li></ul>
+<p>July 1st - July 5th</p><ul><li></li></ul>
+<p>July 8th - July 12th</p><ul><li></li></ul>
+<p>July 15th - July 19th</p><ul><li></li></ul>
+<p>July 22nd - July 26th</p><ul><li></li></ul>
+<p>July 29th - August 2</p><ul><li></li></ul>
+<p>August 5th - August 9th</p><ul><li></li></ul>
+
+choropleth in R
+
+Read book
+3 bullet points what i learned
+2 questions

@@ -61,6 +61,18 @@
   font-size: 40px;
 }
 
+.size60{
+  font-size: 60px;
+}
+
+.size80{
+  font-size: 80px;
+}
+
+.size100{
+  font-size: 100px;
+}
+
 .no-outline-links {
   text-decoration: none;
   outline: none;
