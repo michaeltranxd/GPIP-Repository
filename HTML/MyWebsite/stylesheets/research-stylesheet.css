@@ -11,12 +11,15 @@
   transition: 0.6s;
 }
 
-.revised li {
-  list-style: none;
+.schedule li {
   font-family: 'Mali' ,Arial, Helvetica, sans-serif;
 }
 
-.revised li:before{
+.completed {
+  list-style: none;
+}
+
+.completed::before{
   content: '✔ '
 }
 
