@@ -5,6 +5,9 @@ library(readr)
 library(dplyr)
 library(ggmap)
 
+# Shape files have the coordinates (latitude/longitude) and particular ids
+
+
 # Same issue, but how do I plot my data of various zipcodes
 # to map onto the shapefile regions?
 
