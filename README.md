@@ -5,4 +5,4 @@ The repository is designed to keep my work organized.
 For more information visit: https://ecc.uic.edu/students/transfer-internship-program/
 
 
-Dummy website: mtt2.people.uic.edu
+Dummy website: https://mtt2.people.uic.edu/
