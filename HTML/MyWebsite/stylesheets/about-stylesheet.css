@@ -24,7 +24,7 @@
   vertical-align: middle;
 }
 
-.about-myself-text {
+.about-myself-text {  
   padding: 0px 15%;
   
 }
@@ -35,3 +35,15 @@
     min-height: 400px;
   }
 }
+
+@media only screen and (min-width: 50px)   {  .about-myself-label, .about-myself-text  { font-size:0.1em;  } }
+@media only screen and (min-width: 100px)  {  .about-myself-label, .about-myself-text  { font-size:0.2em;  } }
+@media only screen and (min-width: 200px)  {  .about-myself-label, .about-myself-text  { font-size:0.4em;  } }
+@media only screen and (min-width: 300px)  {  .about-myself-label, .about-myself-text  { font-size:0.6em;  } }
+@media only screen and (min-width: 400px)  {  .about-myself-label, .about-myself-text  { font-size:0.8em;  } }
+@media only screen and (min-width: 500px)  {  .about-myself-label, .about-myself-text  { font-size:1.0em;  } }
+@media only screen and (min-width: 600px)  {  .about-myself-label, .about-myself-text  { font-size:1.2em;  } }
+@media only screen and (min-width: 700px)  {  .about-myself-label, .about-myself-text  { font-size:1.4em;  } }
+@media only screen and (min-width: 800px)  {  .about-myself-label, .about-myself-text  { font-size:1.6em;  } }
+@media only screen and (min-width: 900px)  {  .about-myself-label, .about-myself-text  { font-size:1.8em;  } }
+@media only screen and (min-width: 1000px) {  .about-myself-label, .about-myself-text  { font-size:2.0em;  } }

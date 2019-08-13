@@ -14,34 +14,61 @@ library(ggmap)
 # Get shp file from folder
 shp <- readOGR(dsn="./shape_files/Boundaries - ZIP Codes", layer="geo_export_c9507149-0e38-4528-927f-c06ba2fab6b1", stringsAsFactors = FALSE)
 dim(shp)
-head(shp)
-shp[1]
+#head(shp)
 
 # Convert to dataframe for ggplot
 shp.points <- fortify(shp)
 head(shp.points)
-shp.points
+#shp.points[5]
+#shp.points
 
-df_inc_data <- shp.points %>% 
-  transform(hehexd = 0)
-head(df_inc_data)
+# read data
+data <- read_csv("./shape_files/Boundaries - ZIP Codes/random_fake_patients_data.csv")
+head(data)
+data
 
-df_diff_id <- shp.points %>%
-  group_by(id) %>%
-    distinct(id)
-df_diff_id
+# plot data on histogram
+data_histogram <- data %>%
+  ggplot(aes(x=zipcode)) +
+    geom_histogram(binwidth = 1)
+
+data_histogram
+
+#Get table of ids and count
+data_count <- data %>%
+  group_by(zipcode) %>%
+    summarize(count = n())
+data_count
+
+# Get the mapping from id to zipcode
+map_id_to_zipcode <- read_csv("./shape_files/Boundaries - ZIP Codes/input to zipcode.csv");
+head(map_id_to_zipcode)
+map_id_to_zipcode
+
+# Add zipcodes to data
+new_data <- data_count %>%
+  merge(map_id_to_zipcode, by="zipcode") %>%
+    arrange(id)
+head(new_data)
+
+# add data to shp.points
+shp.data <- merge(shp.points, new_data, by="id")
+head(shp.data)
+
+
 
 # Write to a csv file format
-write.csv(df_inc_data, file = "chicago_shp_data.csv")
+#write.csv(df_inc_data, file = "chicago_shp_data.csv")
 
-?geom_path
+#geom_path
+
+
 
 # Map on ggplot
 map <- ggplot() +
-  geom_polygon(data = df_inc_data, aes(x = long, y = lat, group = group, fill=id),
-    color = 'gray', size=1)
+  geom_polygon(data = shp.data, aes(fill= count, x = long, y = lat, group = group), color = 'gray', size=1) +
+    theme_void() # theme_void() removes the theme of "graph paper"
 map
-
 
 
 # --- Working Map ---

@@ -10,20 +10,24 @@
   top: 100px;
   list-style: none;
   padding: 20px;
-  background-color: #0B0C10;
   border-radius: 50px;
 }
 
 .chapter-navigation a{
-  color: #45A29E;
+  color: #f0f0f0;
   text-decoration: none;
 }
 
 .chapter-navigation a:hover {
-  color: #66FCF1;
+  color: #d78d33;
   transition: 0.4s;
 }
 
 .book-link a:hover{
-  color: #45A29E;
+  color: #aa6d22;
+}
+
+.ln-break {
+  border: 0;
+  border-top: 5px solid #4d77b3;
 }

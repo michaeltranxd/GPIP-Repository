@@ -27,7 +27,7 @@ data(df_pop_zip)
 head(df_pop_zip)
 
 #dataframe for random_pop_cook (made up data)
-random_pop_cook <- read_csv("../CSV/random_pop_data.csv")
+random_pop_cook <- read_csv("../../CSV/random_pop_data.csv")
 head(random_pop_cook)
 #Mutate first col to character
 random_pop_cook <- random_pop_cook %>%

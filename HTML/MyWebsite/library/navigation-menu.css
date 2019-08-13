@@ -18,7 +18,7 @@
 }
 
 .collapsible:hover{
-  background-color: #45A29E;
+  background-color: #4fa136;
   transition: 0.5s;
 }
 
@@ -60,6 +60,14 @@
 }
 
 .navigation-group a:hover {
-  color: #45A29E;
+  color: #4275bd;
   transition: 0.6s;
 }
+
+@media all and (min-width: 50px)   {  .navigation-group  { font-size:0.1em;  } }
+@media all and (min-width: 200px)  {  .navigation-group  { font-size:0.2em;  } }
+@media all and (min-width: 400px)  {  .navigation-group  { font-size:0.4em;  } }
+@media all and (min-width: 800px)  {  .navigation-group  { font-size:1.0em;  } }
+@media all and (min-width: 1600px) {  .navigation-group  { font-size:1.4em;  } }
+@media all and (min-width: 2400px) {  .navigation-group  { font-size:1.8em;  } }
+  

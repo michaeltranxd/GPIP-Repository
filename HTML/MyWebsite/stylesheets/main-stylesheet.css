@@ -2,7 +2,7 @@
 
 .grid {
   display: grid;
-  grid-template-rows: 75px repeat(5, 1fr);
+  grid-template-rows: 75px repeat(7, 1fr);
   grid-template-areas:  
   ". . ."
   "intro intro intro"
@@ -10,7 +10,8 @@
   "break1 break1 break1"
   "after-intro after-intro after-intro"
   "desc desc desc"
-  ". . .";
+  ". . ."
+  "last last last";
         
 }
 
@@ -48,4 +49,13 @@
   font-size: 20px; 
 }
 
+#last {
+  grid-area: last;
+}
+
+.thankyou-entry {
+  margin: 0px 10% 5%;
+  border: 1px white solid;
+  border-radius: 30px;
+}
 
